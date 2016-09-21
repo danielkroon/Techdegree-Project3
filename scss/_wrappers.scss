@@ -1,0 +1,13 @@
+.l-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: $base_background;
+}
+
+.m-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

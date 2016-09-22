@@ -397,9 +397,17 @@ textarea {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  margin: auto; }
 
 .m-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin: auto; }
+
+.s-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -425,7 +433,7 @@ header {
     color: #93a3a8; }
 
 .seperator {
-  border-top: 4px solid #2D3945;
+  border-top: 3px solid #2D3945;
   width: 95%;
   border-radius: 8px;
   margin-top: 10px;
@@ -436,10 +444,39 @@ fieldset {
   margin: 0;
   padding: 0; }
 
-input {
-  border-radius: 4px; }
+legend {
+  color: #2D3945; }
 
-#full-name {
-  text-align: right; }
+label {
+  margin: 5px 0px 5px 0px; }
+
+input {
+  border-radius: 4px;
+  outline: 0;
+  border: none;
+  padding: 15px;
+  background-color: #e8eeef;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset; }
+
+select {
+  border-radius: 4px;
+  outline: 0;
+  border: none;
+  background-color: #e8eeef;
+  margin-bottom: 25px; }
+
+#full-name, #email-address {
+  font-style: italic; }
+
+.contact-information {
+  display: flex;
+  flex-direction: column; }
+
+.newsletter h2 {
+  color: #2D3945;
+  margin-bottom: 10px; }
+.newsletter p {
+  color: #93a3a8; }
 
 /*# sourceMappingURL=styles.css.map */

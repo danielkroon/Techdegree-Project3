@@ -4,10 +4,38 @@ fieldset {
     padding: 0;
 }
 
-input {
-    border-radius: 4px;
+legend {
+    color: $base_color;
 }
 
-#full-name {
-    text-align: right;
+label {
+    margin: 5px 0px 5px 0px;
+}
+
+input {
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+    padding: 15px;
+    background-color: #e8eeef;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+select {
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+    background-color: #e8eeef;
+    margin-bottom: 25px;
+    
+}
+
+#full-name, #email-address {
+    font-style: italic;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
 }

@@ -1,0 +1,18 @@
+h2 {
+    color: $base_color;
+}
+
+p, label {
+    color:  $alpha_color;
+}
+
+input, select, #topics {
+    
+    &:focus { 
+       border: 1px solid #2d3945;
+    }
+    
+    &:hover {
+       background-color: #ddd;
+    }
+}

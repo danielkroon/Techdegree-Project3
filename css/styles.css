@@ -411,12 +411,18 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media screen and (min-width: 760px) {
+    .s-wrapper {
+      flex-direction: row;
+      justify-content: flex-start; } }
 
-h2 {
-  color: #2D3945; }
+h1, h2, h3 {
+  color: #2D3945;
+  font-family: 'Merriweather', serif; }
 
 p, label {
-  color: #93a3a8; }
+  color: #93a3a8;
+  font-family: 'Merriweather', serif; }
 
 input:focus, select:focus, #topics:focus {
   border: 1px solid #2d3945; }
@@ -446,6 +452,14 @@ header {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+input-placeholder {
+  font-style: italic;
+  text-align: right; }
+
+.contact-information {
+  display: flex;
+  flex-direction: column; }
+
 fieldset {
   border: none;
   margin: 0;
@@ -456,6 +470,9 @@ legend {
 
 label {
   margin: 5px 0px 5px 0px; }
+  @media screen and (min-width: 760px) {
+    label {
+      width: 22%; } }
 
 input {
   border-radius: 4px;
@@ -465,6 +482,11 @@ input {
   background-color: #e8eeef;
   margin-bottom: 25px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset; }
+  @media screen and (min-width: 760px) {
+    input {
+      width: 78%; }
+      input:nth-child(n+3) {
+        width: auto; } }
 
 select {
   border-radius: 4px;
@@ -474,16 +496,21 @@ select {
   margin-bottom: 25px;
   height: 50px;
   color: #93a3a8; }
+  @media screen and (min-width: 760px) {
+    select {
+      width: 81%; } }
 
-#full-name, #email-address {
-  font-style: italic; }
-
-.contact-information {
-  display: flex;
-  flex-direction: column; }
+#zip {
+  width: 30%; }
 
 .newsletter h2 {
   margin-bottom: 10px; }
+
+input[type=checkbox]:checked {
+  content: "";
+  border: 2px solid #34064e;
+  transition: all .5s;
+  color: red; }
 
 #topics {
   width: 100%;

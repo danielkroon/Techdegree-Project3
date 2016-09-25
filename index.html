@@ -11,6 +11,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/styles.css" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="https://use.fontawesome.com/fe636a58a6.js"></script>
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="" />
@@ -111,22 +112,32 @@
 									<legend><h2>Newsletter</h2></legend>
 									<p>Select the newsletters you would like to recieve</p>
 									
-										<input type="checkbox" id="html_news" value="interest_html" name="user_interest">
-										<label for="html_news">HTML News</label><br>
+										<label>
+											<input type="checkbox" name="check" value="interest_html">
+											<span class="label-text">HTML News</span>
+										</label><br>
 										
-										<input type="checkbox" id="css_news" value="interest_css" name="user_interest">
-										<label for="css_news">CSS News</label><br>
+										<label>
+											<input type="checkbox" name="check" value="interest_css">
+											<span class="label-text">CSS News</span>
+										</label><br>
 										
-										<input type="checkbox" id="javascript_news" value="interest_javascript" name="user_interest">
-										<label for="javascript_news">Javascript News</label>
+										<label>
+											<input type="checkbox" name="check" value="interest_javascript">
+											<span class="label-text">Javascript News</span>
+										</label><br>
 									
 										<p>Newsletter format</p>
 										
-										<input type="radio" id="html" value="html_format" name="user_format">
-										<label for="html">HTML</label><br>
+										<label>
+											<input type="radio" name="radio" value="format_html">
+											<span class="label-text">HTML</span>
+										</label><br>
 										
-										<input type="radio" id="plain_text" value="text_format" name="user_format">
-										<label for="plain_text">Plain text</label>
+										<label>
+											<input type="radio" name="radio" value="format_plain">
+											<span class="label-text">Plain Text</span>
+										</label><br>
 								</fieldset>
 								
 								<p>Other topics you'd like to hear about</p>

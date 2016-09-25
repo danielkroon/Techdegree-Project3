@@ -1,6 +1,7 @@
-input-placeholder {
+::-webkit-input-placeholder {
     font-style: italic;
     text-align: right;
+    padding-right: 20px;
 }
 
 .contact-information {
@@ -60,4 +61,8 @@ select {
 
 #zip {
     width: 30%;
+    
+    @media screen and (min-width: 760px) {
+        margin-left: -5px;
+    }
 }

@@ -1,14 +1,17 @@
 h1, h2, h3 {
     color: $base_color;
     font-family: 'Merriweather', serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 p, label {
     color:  $alpha_color;
     font-family: 'Merriweather', serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 input, select, #topics {
+    -webkit-font-smoothing: antialiased;
     
     &:focus { 
        border: 1px solid #2d3945;
@@ -17,4 +20,11 @@ input, select, #topics {
     &:hover {
        background-color: #ddd;
     }
+}
+
+legend {
+    color: $base_color;
+    font-size: 24px;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
 }

@@ -419,16 +419,26 @@ textarea {
 
 h1, h2, h3 {
   color: #2D3945;
-  font-family: 'Merriweather', serif; }
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased; }
 
 p, label {
   color: #93a3a8;
-  font-family: 'Merriweather', serif; }
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: antialiased; }
 
-input:focus, select:focus, #topics:focus {
-  border: 1px solid #2d3945; }
-input:hover, select:hover, #topics:hover {
-  background-color: #ddd; }
+input, select, #topics {
+  -webkit-font-smoothing: antialiased; }
+  input:focus, select:focus, #topics:focus {
+    border: 1px solid #2d3945; }
+  input:hover, select:hover, #topics:hover {
+    background-color: #ddd; }
+
+legend {
+  color: #2D3945;
+  font-size: 24px;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased; }
 
 header {
   width: 100%; }
@@ -467,9 +477,6 @@ fieldset {
   margin: 0;
   padding: 0; }
 
-legend {
-  color: #2D3945; }
-
 label {
   margin: 5px 0px 5px 0px; }
   @media screen and (min-width: 760px) {
@@ -507,9 +514,6 @@ select {
   @media screen and (min-width: 760px) {
     #zip {
       margin-left: -5px; } }
-
-.newsletter h2 {
-  margin-bottom: 10px; }
 
 input[type="checkbox"] {
   display: none; }
